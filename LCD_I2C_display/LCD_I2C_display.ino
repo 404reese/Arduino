@@ -10,7 +10,7 @@ void setup() {
     lcd.backlight();  // Turn on backlight
 
     lcd.setCursor(0, 0);
-    lcd.print("I2C LCD Ready!");
+    lcd.print("الله أكبر!");
     delay(2000);
 
     lcd.clear();
@@ -26,7 +26,7 @@ void loop() {
 
         lcd.clear();
         lcd.setCursor(0, 0);
-        lcd.print("Msg:");
+        lcd.print("So lost in this");
         lcd.setCursor(0, 1);
         lcd.print(message);
 
