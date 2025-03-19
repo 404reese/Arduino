@@ -29,7 +29,16 @@ void loop() {
             Serial.print(distance_cm);
             Serial.println(" cm");
         }
+        if (distance_cm < 10) {
+    Serial.println("⚠️ Too close! Back up!");
+  } else if (distance_cm > 50) {
+    Serial.println("⚠️ Too far! Move closer!");
+  } else {
+    Serial.print("Distance: ");
+    Serial.print(distance_cm);
+    Serial.println(" cm");
+  }
     }
-
+    
     delay(500); // 500ms delay
 }
